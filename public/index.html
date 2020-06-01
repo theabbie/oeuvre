@@ -43,6 +43,9 @@ Oeuvre
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 * {font-family: 'Martel Sans';}
+body {
+margin: 0px;
+}
 h1 {
 padding-left: 15px;
 padding-right: 15px;
@@ -69,34 +72,8 @@ font-weight: 100;
 a {
 text-decoration: none;
 }
-ul.breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
-  background-color: #eee;
-}
-ul.breadcrumb li {
-  display: inline;
-  font-size: 18px;
-}
-ul.breadcrumb li+li:before {
-  padding: 8px;
-  color: black;
-  content: "/\00a0";
-}
-ul.breadcrumb li a {
-  color: #0275d8;
-  text-decoration: none;
-}
-ul.breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
-}
-amp-img, amp-youtube {
-  margin: auto;
-}
-figcaption {
-  text-align: center;
-  padding: 12px;
+header {
+display: block;
 }
 </style>
 <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -128,13 +105,9 @@ figcaption {
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </head>
 <body>
-<ul class="breadcrumb">
-  <li>Welcome to TheAbbie</li>
-</ul>
-<h1>
-Oeuvre
-</h1>
- <p>The official blog of Fr. C. Rodrigues Institute of Technology showcasing the up and coming creative talent in the institution. The Website is a showcase to the immense potential of engineering students around the world.</p>
+<header>
+<h1>Oeuvre</h1>
+</header>
 <amp-install-serviceworker src="https://oeuvre.web.app/sw.js" layout="nodisplay"></amp-install-serviceworker>
 </body>
 </html>
