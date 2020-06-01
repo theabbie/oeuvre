@@ -120,6 +120,19 @@ font-size: 20px;
 p amp-img {
 margin: auto;
 }
+.post {
+display: block;
+margin: 15px 0px 15px 30px;
+}
+.post amp-img {
+display: inline-block;
+float: left;
+border-radius: 15px;
+}
+.post h3 {
+display: inline-block;
+max-width: 500px;
+}
 </style>
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
@@ -157,12 +170,20 @@ margin: auto;
 <hr>
 </header>
 <main>
+<section>
 <h2>About this Blog</h2>
 <p>
 <amp-img src="assets/cover.png" width="1920" height="1080" layout="responsive" sizes="(min-width: 768px) 320px, 80vw" alt="oeuvre"></amp-img>
 </p>
 <p>The official blog of Fr. C. Rodrigues Institute of Technology showcasing the up and coming creative talent in the institution. The Website is a showcase to the immense potential of engineering students around the world.</p>
+</section>
+<section>
 <h2>Popular posts</h2>
+<div class="post">
+<amp-img src="https://theabbie.github.io/blog/assets/oeuvre-fcrit.jpg" width="100" height="100" layout="responsive" sizes="(min-width: 200px) 100px, 90vw" alt="sample post"></amp-img>
+<h3>Sample post Sample post Sample post Sample post Sample post Sample post Sample post Sample post </h3>
+</div>
+</section>
 </main>
 <footer>
 <hr>
