@@ -1,12 +1,12 @@
 {
   "projects": {
-    "default": "codrcrew"
+    "default": "oeuvre-eb87b"
   },
   "targets": {
-    "codrcrew": {
+    "oeuvre-eb87b": {
       "hosting": {
-        "theabbie": [
-          "theabbie"
+        "oeuvre": [
+          "oeuvre"
         ]
       }
     }
