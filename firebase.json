@@ -1,6 +1,7 @@
 {
   "hosting": {
     "target": "oeuvre",
+    "cleanUrls": true,
     "public": "public",
     "ignore": [
       "firebase.json",                                              "**/.*",
