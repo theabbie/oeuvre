@@ -84,6 +84,20 @@ border: 0;
 height: 1px;
 background: rgb(204,204,204);
 }
+header nav {
+display: block;
+width: 100%;
+overflow: auto;
+}
+header nav a {
+font-size: 24px;
+display: inline-block;
+padding: 15px;
+transition: 0.2s;
+}
+header nav a:hover {
+background: rgb(204,204,204);
+}
 </style>
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
@@ -117,6 +131,7 @@ background: rgb(204,204,204);
 <header>
 <h1>Oeuvre</h1>
 <hr>
+<nav><a href="/">Home</a><a href="/">Home</a><a href="/">Home</a><a href="/">Home</a><a href="/">Home</a><a href="/">Home</a></nav>
 </header>
 <amp-install-serviceworker src="https://oeuvre.web.app/sw.js" layout="nodisplay"></amp-install-serviceworker>
 </body>
