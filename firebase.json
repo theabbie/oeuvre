@@ -1,17 +1,7 @@
 {
   "hosting": {
-    "target": "theabbie",
+    "target": "oeuvre",
     "public": "public",
-    "rewrites": [{
-    "source": "/subscribe",
-    "function": "subscribe"
-    },{
-    "source": "/send",
-    "function": "send"
-    },{
-    "source": "/post",
-    "function": "post"
-    }],
     "ignore": [
       "firebase.json",                                              "**/.*",
       "**/node_modules/**"
