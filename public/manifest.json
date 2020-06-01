@@ -1,26 +1,15 @@
 {
   "short_name": "Oeuvre",
   "name": "Oeuvre",
-  "description": "The official blog of Fr. C. Rodrigues Institute of Technology showcasing the up and coming creative talent in the institution. The Website is a showcase to the immense potential of engineering students around the world.",
-  "developer": {
-    "name": "TheAbbie",
-    "url": "https://oeuvre.web.app/"
-  },
   "icons": [
-        {
-            "src": "/assets/favicons/android-chrome-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "/assets/favicons/android-chrome-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ],
-  "start_url": "/",
+    {
+      "src":"https://oeuvre.web.app/assets/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "https://oeuvre.web.app/",
   "background_color": "#ffffff",
-  "display": "standalone",
-  "scope": "https://oeuvre.web.app/",
-  "theme_color": "#ffffff"
+  "Theme_color": "#ffffff",
+  "display": "standalone"
 }
