@@ -1,10 +1,15 @@
 {
   "short_name": "Oeuvre",
   "name": "Oeuvre",
+  "prefer_related_applications": false,
   "icons": [
     {
       "src":"https://oeuvre.web.app/assets/android-chrome-192x192.png",
       "sizes": "192x192",
+      "type": "image/png"
+    },{
+      "src":"https://oeuvre.web.app/assets/android-chrome-512x512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ],
