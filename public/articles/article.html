@@ -43,6 +43,9 @@ Oeuvre
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 * {font-family: 'Martel Sans';}
+html {
+  scroll-behavior: smooth;
+}
 body {
 margin: 0px;
 }
@@ -92,7 +95,8 @@ header nav {
 display: block;
 width: 100%;
 overflow: auto;
-white-space:nowrap;
+white-space: nowrap;
+position: relative;
 }
 header nav a {
 font-size: 24px;
@@ -124,17 +128,32 @@ margin: auto;
 display: flex;
 flex-wrap: wrap;
 width: 90%;
-margin: auto;
+margin: 20px auto 20px auto;
 }
 .post amp-img {
 border-radius: 15px;
 }
 .post h3 {
 max-width: 500px;
-margin: 5px;
+margin-bottom: 5px;
 }
 .post h3 a {
 color: black;
+}
+a.top {
+position: fixed;
+bottom: 25px;
+right: 25px;
+background: rgba(50,50,50,0.8);
+font-weight: bolder;
+padding: 0px 15px 0px 15px;
+font-size: 24px;
+border-radius: 12px;
+color: white;
+z-index: 999;
+}
+footer p.social a {
+margin: 10px;
 }
 </style>
 <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -167,17 +186,31 @@ color: black;
 </head>
 <body>
 <header>
-<h1>Oeuvre</h1>
+<h1 id="top">Oeuvre</h1>
 <hr>
-<nav><a href="/">Home</a><a href="/articles">Articles</a><a href="/poems">Poems</a><a href="/graphic">Graphic Arts</a><a href="/faq">FAQ</a><a href="/interview">Senior Interviews</a><a href="/policy">Privacy policy</a></nav>
+<nav>
+<a href="/">Home</a>
+<a href="/articles">Articles</a>
+<a href="/poems">Poems</a>
+<a href="/graphic">Graphic Arts</a>
+<a href="/faq">FAQ</a>
+<a href="/interview">Senior Interviews</a>
+<a href="/policy">Privacy policy</a>
+</nav>
 <hr>
 </header>
+<a class="top" href="#top">&#x25B2;</a>
 <main>
-<h1>The Quick brown fox jumped over the lazy dog</h1>
+<h1>The quick brown fox jumped over the lazy dog</h1>
 </main>
 <footer>
 <hr>
 <p>Copyright © 2020 All Rights Reserved by <a href="https://www.fcrit.ac.in">FCRIT-Vashi</a></p>
+<p class="social">
+<a href="https://facebook.com/fr.c.i.t.blog/"><amp-img width="35" height="35" layout="fixed" src="https://image.flaticon.com/icons/svg/174/174848.svg"></amp-img></a>
+<a href="https://www.instagram.com/oeuvre.fcrit/"><amp-img width="35" height="35" layout="fixed" src="https://image.flaticon.com/icons/svg/174/174855.svg"></amp-img></a>
+<a href="https://twitter.com/"><amp-img width="35" height="35" layout="fixed" src="https://image.flaticon.com/icons/svg/174/174876.svg"></amp-img></a>
+</p>
 </footer>
 <amp-install-serviceworker src="https://oeuvre.web.app/sw.js" layout="nodisplay"></amp-install-serviceworker>
 </body>
